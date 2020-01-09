@@ -38,5 +38,6 @@ void    bit_merge_sorted(ULONG * restrict A, ULONG * restrict B, ULONG * restric
                    size_t asz, size_t bsz);
 ULONG   bit_bmodulo(ULONG x, ULONG z);
 void    bit_round_to_pow2(ULONG *n);
+ULONG   bit_popcount(ULONG targ);
 
 #endif
