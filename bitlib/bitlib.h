@@ -17,6 +17,16 @@ typedef long ULONG;
 typedef long long ULLONG;
 #endif
 
+typedef struct  s_mask
+{
+    ULONG M5;
+    ULONG M4;
+    ULONG M3;
+    ULONG M2;
+    ULONG M1;
+    ULONG M0;
+};              BMASK;
+
 ULONG   bit_set_bit(ULONG targ, ULONG mask, ULLONG shift);
 ULONG   bit_unset_bit(ULONG targ, ULONG mask, ULLONG shift);
 ULONG   bit_toggle_bit(ULONG targ, ULONG mask, ULLONG shift);
